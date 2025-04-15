@@ -1,12 +1,14 @@
 {
   "name": "Figma to Cursor",
-  "id": "1434599500152464568",
-  "networkAccess": { "allowedDomains": ["https://designwithprompts.com"] },
+  "networkAccess": { 
+    "allowedDomains": ["*"],
+    "reasoning": "This plugin needs to access the internet to fetch the latest version of Cursor." 
+  },
   "documentAccess": "dynamic-page",
   "api": "1.0.0",
   "main": "dist/code.js",
   "ui": "dist/ui.html",
-  "editorType": ["figma", "figjam"],
-  "enableProposedApi": true,
-  "enablePrivatePluginApi": true
+  "editorType": ["figma", "figjam", "dev"],
+  "enablePrivatePluginApi": true,
+  "capabilities": ["inspect"]
 }
